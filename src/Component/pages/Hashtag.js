@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "../CustomCss/Hashtag.css";
+import NavComponent from "./Navbar";
 
 const Hashtag = () => {
   const [inputText, setInputText] = useState("");
@@ -42,7 +43,9 @@ const Hashtag = () => {
   };
 
   return (
-    <div className="hashtagbody">
+    <>
+    <NavComponent/>
+   <div className="hashtagbody">
       <h1>Hashtag Generator</h1>
       <input
         type="text"
@@ -59,6 +62,7 @@ const Hashtag = () => {
         ))}
       </ul>
     </div>
+    </>
   );
 };
 
