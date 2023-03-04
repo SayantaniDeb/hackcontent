@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom'
 
 const projectID = '7077e4e8-6900-4c96-bcec-fae94c20ab95';
 
@@ -14,7 +15,7 @@ const Modal = () => {
     const authObject = { 'Project-ID': projectID, 'User-Name': username, 'User-Secret': password };
 
     try {
-      await axios.get('http://localhost:3000', { headers: authObject });
+      await axios.get('http://localhost:3000/chatapp', { headers: authObject });
 
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);
@@ -28,6 +29,8 @@ const Modal = () => {
   };
 
   return (
+    <>
+    
     <div className="wrapper">
       <div className="form">
         <h1 className="title">Chat Application</h1>
@@ -38,12 +41,13 @@ const Modal = () => {
             <button type="submit" className="button">
               <span>Start chatting</span>
             </button>
+            <Link to="/"><button className='button'><span>Home</span></button></Link>
           </div>
         </form>
         <h1>{error}</h1>
       </div>
     </div>
-
+</>
   );
 };
 

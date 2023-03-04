@@ -38,10 +38,11 @@ export default function NavComponent() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/about"><div className="flex items-center">
           About us
-        </a>
+        </div></Link>
       </Typography>
+      
     </ul>
   );
  
@@ -57,9 +58,10 @@ export default function NavComponent() {
           <span>App name</span>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <Button variant="gradient" size="sm" className="hidden lg:inline-block">
+        <Link to='/chatapp'><Button variant="gradient" size="sm" className="hidden lg:inline-block">
           <span>Join Now</span>
         </Button>
+        </Link>
         <IconButton
           variant="text"
           className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
