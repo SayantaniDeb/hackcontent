@@ -1,5 +1,6 @@
 import { Button } from '@material-tailwind/react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from '../../images/11.gif'
 import NavComponent from './Navbar'
 
@@ -19,7 +20,7 @@ function Section() {
         <Button className='mx-2 mt-4'>Idea</Button>
         <Button className='mx-2 mt-4'>Voice-over</Button>
         <Button className='mx-2 mt-4'>Context</Button>
-        <Button className='mx-2 mt-4'>Hashtag</Button>
+        <Link to="/hashtag"><Button className='mx-2 mt-4'>Hashtag</Button></Link>
         </div>
       </div>
       
