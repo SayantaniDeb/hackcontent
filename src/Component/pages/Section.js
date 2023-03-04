@@ -21,6 +21,7 @@ function Section() {
         <Button className='mx-2 mt-4'>Voice-over</Button>
         <Button className='mx-2 mt-4'>Context</Button>
         <Link to="/hashtag"><Button className='mx-2 mt-4'>Hashtag</Button></Link>
+        <Link to="/chatapp"><Button className='mx-2 mt-4'> Collaborate with Others!</Button></Link>
         </div>
       </div>
       
