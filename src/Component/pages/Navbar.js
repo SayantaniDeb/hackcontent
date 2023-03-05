@@ -103,9 +103,10 @@ export default function NavComponent() {
       <MobileNav open={openNav}>
         <div className="container mx-auto">
           {navList}
-          <Button variant="gradient" size="sm" fullWidth className="mb-2">
+          <Link to="/chatapp"><Button variant="gradient" size="sm" fullWidth className="mb-2">
             <span>Join Now</span>
           </Button>
+          </Link>
         </div>
       </MobileNav>
     </Navbar>

@@ -10,7 +10,7 @@ const Hashtag = () => {
   const [hashtags, setHashtags] = useState([]);
 
   const apiKey = ""; // replace with your actual API key
-//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
+
   const handleInputChange = (event) => {
     setInputText(event.target.value);
   };
@@ -47,7 +47,7 @@ const Hashtag = () => {
   return (
     <>
     <NavComponent/>
-    <div class="flex justify-center items-center">
+    <div className="flex justify-center items-center">
     <img src={logo}></img>
     </div>
    <div className="hashtagbody">
