@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { SendOutlined, PictureOutlined } from '@ant-design/icons';
 import { sendMessage, isTyping } from 'react-chat-engine';
-import NavComponent from '../../Component/pages/Navbar';
+
 
 const MessageForm = (props) => {
   const [value, setValue] = useState('');

@@ -1,8 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import About from "./Component/pages/About";
-import Context from "./Component/pages/Context";
 import Hashtag from "./Component/pages/Hashtag";
-import Idea from "./Component/pages/Idea";
 import Meme from "./Component/pages/Meme";
 import Section from "./Component/pages/Section";
 import ChatEngine2 from "./Container/ChatApp/ChatEngine2";

@@ -71,7 +71,7 @@ export default function Meme() {
                 </div>
             
             <div className="meme" style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <img src={meme.randomImage} className="meme--image" />
+                <img src={meme.randomImage} className="meme--image" alt="img1" />
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
             </div>

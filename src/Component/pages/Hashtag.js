@@ -48,7 +48,7 @@ const Hashtag = () => {
     <>
     <NavComponent/>
     <div className="flex justify-center items-center">
-    <img src={logo}></img>
+    <img src={logo} alt="img2"></img>
     </div>
    <div className="hashtagbody">
 
