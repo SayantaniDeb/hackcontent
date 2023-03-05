@@ -14,8 +14,8 @@ function App() {
         <Route exact path="/" element={<Section />} />
         <Route exact path="/hashtag" element={<Hashtag/>} />
         <Route exact path="/chatapp" element={<ChatEngine2/>}/>
-        <Route exact path="/Context" element={<Context/>} />
-        <Route exact path="/idea" element={<Idea/>} />
+        {/* <Route exact path="/Context" element={<Context/>} /> */}
+        {/* <Route exact path="/idea" element={<Idea/>} /> */}
         <Route exact path="/meme" element={<Meme/>} />
         <Route exact path="/about" element={<About/>} />
       </Routes>

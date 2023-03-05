@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import axios from "axios";
 import "../CustomCss/Hashtag.css";
 import NavComponent from "./Navbar";
+import { Button } from "@material-tailwind/react";
+import logo from '../../images/22.gif'
 
 const Hashtag = () => {
   const [inputText, setInputText] = useState("");
   const [hashtags, setHashtags] = useState([]);
 
-  const apiKey = "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"; // replace with your actual API key
-
+  const apiKey = ""; // replace with your actual API key
+//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
   const handleInputChange = (event) => {
     setInputText(event.target.value);
   };
@@ -45,16 +47,19 @@ const Hashtag = () => {
   return (
     <>
     <NavComponent/>
+    <div class="flex justify-center items-center">
+    <img src={logo}></img>
+    </div>
    <div className="hashtagbody">
-      <h1>Hashtag Generator</h1>
+
       <input
         type="text"
         className="inputboxhashtag"
         onChange={handleInputChange}
       />
-      <button onClick={generateHashtags} className="btndesign">
+      <Button onClick={generateHashtags} className="btndesign">
         Generate Hashtags
-      </button>
+      </Button>
       <br />
       <ul className="ulstyles">
         {hashtags.map((hashtag, index) => (
@@ -62,7 +67,8 @@ const Hashtag = () => {
         ))}
       </ul>
     </div>
-    </>
+
+        </>
   );
 };
 

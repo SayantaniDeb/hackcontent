@@ -17,9 +17,8 @@ function Section() {
         <h4>
         Let us guide your content creation journey and make it easy for you.
         </h4>
-        <Link to="/idea"><Button className='mx-2 mt-4'>Idea</Button></Link>
+        
         <Link to="/meme"><Button className='mx-2 mt-4'>Meme</Button></Link>
-        <Link to="/Context"><Button className='mx-2 mt-4'>Context</Button></Link>
         <Link to="/hashtag"><Button className='mx-2 mt-4'>Hashtag</Button></Link>
         <Link to="/chatapp"><Button className='mx-2 mt-4'> Collaborate with Others!</Button></Link>
         </div>
