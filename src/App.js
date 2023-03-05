@@ -17,7 +17,7 @@ function App() {
         {/* <Route exact path="/Context" element={<Context/>} /> */}
         {/* <Route exact path="/idea" element={<Idea/>} /> */}
         <Route exact path="/meme" element={<Meme/>} />
-        <Route exact path="/about" element={<About/>} />
+        {/* <Route exact path="/about" element={<About/>} /> */}
       </Routes>
     </BrowserRouter>
   );

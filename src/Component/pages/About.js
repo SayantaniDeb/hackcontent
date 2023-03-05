@@ -7,6 +7,7 @@ function About() {
   return (
     <>
       <NavComponent/>
+      
       </>
   );
 }

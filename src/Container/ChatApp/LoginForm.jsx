@@ -2,7 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom'
 
-const projectID = '7077e4e8-6900-4c96-bcec-fae94c20ab95';
+const projectID = 'b09fda89-83bd-4c7f-b47a-4e5f64f950a6';
 
 const Modal = () => {
   const [username, setUsername] = useState('');
@@ -15,7 +15,7 @@ const Modal = () => {
     const authObject = { 'Project-ID': projectID, 'User-Name': username, 'User-Secret': password };
 
     try {
-      await axios.get('http://localhost:3000/chatapp', { headers: authObject });
+      await axios.get('http://localhost:3000', { headers: authObject });
 
       localStorage.setItem('username', username);
       localStorage.setItem('password', password);

@@ -32,7 +32,7 @@ export default function NavComponent() {
         </Link>
       </Typography>
 
-      <Typography
+      {/* <Typography
         as="li"
         variant="small"
         color="blue-gray"
@@ -42,7 +42,7 @@ export default function NavComponent() {
           About us
         </div></Link>
       </Typography>
-      
+       */}
     </ul>
   );
  
@@ -55,7 +55,7 @@ export default function NavComponent() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          <span>App name</span>
+          <span>CreatorMate</span>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Link to='/chatapp'><Button variant="gradient" size="sm" className="hidden lg:inline-block">
