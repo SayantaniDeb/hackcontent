@@ -1,12 +1,7 @@
 
 ## Creative Meets
 
-The ultimate platform for Content Creators worldwide
-
-
-
-
-
+The ultimate platform for Content Creators worldwide![ezgif-5-dda6b14049](https://user-images.githubusercontent.com/74983536/222953685-cd1f07fc-04da-447d-9a98-1d07cc650389.gif)
 
 ## Inspiration
 
@@ -32,6 +27,23 @@ We built the website by creating components and laying out the structure of the 
 Chatengine.io API was used for the collaboration section of the website.We also integrated OpenAI API for content ideas. This tool used advanced machine learning algorithms to generate content ideas based on specific keywords or topics.
 
 Once the website was complete, we tested and debugged it to ensure that it functioned correctly and looked as intended. Finally, we deployed the finished website to a hosting service Vercel, to make it accessible to the public.
+
+## Steps to run
+ 
+ ``yarn install``
+ 
+ ``yarn start``
+ 
+### To make the Hashtag work:
+
+- Add your own API from [here](https://platform.openai.com/account/api-keys)
+- Put your newly generated apiKey inside Hashtag.js 
+
+
+ ``const apiKey = ""; // replace with your actual API key``
+
+
+
 ##  Challenges we ran into
 
 Building a project can present various challenges, depending on the scope and complexity of the project. During the development of our project, we encountered some common challenges that developers often face, including:
