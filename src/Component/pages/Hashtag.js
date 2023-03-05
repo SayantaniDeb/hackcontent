@@ -7,7 +7,7 @@ const Hashtag = () => {
   const [inputText, setInputText] = useState("");
   const [hashtags, setHashtags] = useState([]);
 
-  const apiKey = "your-api-key"; // replace with your actual API key
+  const apiKey = "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"; // replace with your actual API key
 
   const handleInputChange = (event) => {
     setInputText(event.target.value);
